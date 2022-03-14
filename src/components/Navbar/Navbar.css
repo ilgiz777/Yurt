@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Shizuru&display=swap");
+
+#navbar_color {
+  /* background-color: rgba(14, 82, 94, 0); */
+  background-image: url("https://avatanplus.com/files/resources/original/5a5e5a0240fe8161008f98da.jpg");
+}
+
+img {
+  width: 5vw;
+}
+#logo {
+  width: 9vw;
+  margin-top: 2vh;
+  margin-left: 1vh;
+}
+
+.logo {
+  width: 15vw;
+  margin-right: 15vw;
+}
+
+#button {
+  color: white;
+}

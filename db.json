@@ -1,0 +1,20 @@
+{
+  "products": [
+    {
+      "name": "vsdv",
+      "description": "sdvsd",
+      "price": null,
+      "picture": "sdvsd",
+      "type": "sdvsv",
+      "id": 1
+    },
+    {
+      "name": "xzx12",
+      "description": "zz12",
+      "price": "012",
+      "picture": "xz",
+      "type": "zx",
+      "id": 2
+    }
+  ]
+}
