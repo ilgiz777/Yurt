@@ -1,10 +1,11 @@
 import React from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
-import AboutUs from "./pages/AboutUs";
+import Contact from "./components/Contacts/Contact";
+import AboutUsPage from "./pages/AboutUsPage";
 import AdminPage from "./pages/AdminPage";
 import AuthPage from "./pages/AuthPage";
 import CartPage from "./pages/CartPage";
-import ContactUsPage from "./pages/ContactUsPage";
+
 import EditProductPage from "./pages/EditProductPage";
 import HomePage from "./pages/HomePage";
 import ProductDetailsPage from "./pages/ProductDetailsPage";
@@ -19,8 +20,8 @@ const MainRoutes = () => {
       id: 1,
     },
     {
-      link: "/about",
-      element: <AboutUs />,
+      link: "/aboutus",
+      element: <AboutUsPage />,
       id: 2,
     },
     {
@@ -35,7 +36,7 @@ const MainRoutes = () => {
     },
     {
       link: "/Contact",
-      element: <ContactUsPage />,
+      element: <Contact />,
       id: 5,
     },
 

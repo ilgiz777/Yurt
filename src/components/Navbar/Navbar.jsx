@@ -23,7 +23,7 @@ import { useProducts } from "../../contexts/ProductContext";
 const pages = [
   { name: "PRODUCTS", link: "/products", id: 1 },
   { name: "ABOUT US", link: "/aboutus", id: 2 },
-  { name: "CONTACTS", link: "/contacts", id: 3 },
+  { name: "CONTACT", link: "/contact", id: 3 },
 ];
 // const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 

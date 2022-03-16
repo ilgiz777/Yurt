@@ -2,43 +2,83 @@
   "products": [
     {
       "name": "Apartment",
-      "description": "Djal -29 8/1",
-      "price": null,
+      "description": "Djal -29 8/1 708432678",
+      "price": "45 000$",
       "picture": "https://images.ctfassets.net/pg6xj64qk0kh/2r4QaBLvhQFH1mPGljSdR9/39b737d93854060282f6b4a9b9893202/camden-paces-apartments-buckhead-ga-terraces-living-room-with-den_1.jpg",
-      "type": "Flat",
+      "type": "Apartment",
       "id": 1
     },
     {
-      "name": "Flat",
-      "description": "Nice",
-      "price": null,
+      "name": "Sell",
+      "description": "5-мкрн дом 87 0703252567",
+      "price": "30 000$",
       "picture": "https://images.ctfassets.net/pg6xj64qk0kh/2r4QaBLvhQFH1mPGljSdR9/39b737d93854060282f6b4a9b9893202/camden-paces-apartments-buckhead-ga-terraces-living-room-with-den_1.jpg",
-      "type": "Rent",
+      "type": "Sell",
       "id": 2
     },
     {
       "name": "Apartment",
-      "description": "Mannheim",
+      "description": "Mannheim дом 45 05523462734",
       "price": null,
       "picture": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/267262611.jpg?k=c5202738fb9f021dcd0d0daa060d88d39eb60e27afd35f20b5d6b117d2849d88&o=&hp=1",
       "type": "Sell",
       "id": 4
     },
     {
-      "name": "Flat",
-      "description": "Lubeck",
-      "price": null,
-      "picture": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/267262611.jpg?k=c5202738fb9f021dcd0d0daa060d88d39eb60e27afd35f20b5d6b117d2849d88&o=&hp=1",
-      "type": "Rent",
-      "id": 5
-    },
-    {
       "name": "Apartment",
-      "description": "Beauty plast",
-      "price": 12,
+      "description": "Тунгуч дом 67 0800367271",
+      "price": "29 000$ ",
       "picture": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/267262611.jpg?k=c5202738fb9f021dcd0d0daa060d88d39eb60e27afd35f20b5d6b117d2849d88&o=&hp=1",
       "type": "Sell",
       "id": 6
+    },
+    {
+      "name": "Sell",
+      "description": "Center дом 27 555345621",
+      "price": "",
+      "picture": "https://q-xx.bstatic.com/xdata/images/hotel/max1024x768/267316381.jpg?k=2757641fe5f04cd73dfeafa250b72b7ebaebef789d228ce67f97acb4f0505b2e&o=",
+      "type": "Sell",
+      "id": 7
+    },
+    {
+      "name": "Rent",
+      "description": "Ug2 дом 21 0776345621",
+      "price": "150$",
+      "picture": "https://image1.apartmentfinder.com/i2/4zw09NZYbDuBHLizmJwIsH6kVFRrMYe_3M3s05z-1YU/110/image.jpg",
+      "type": "Rent",
+      "id": 8
+    },
+    {
+      "name": "Apartment",
+      "description": "Alamedin 1 дом 78 0554356722",
+      "price": "6700$",
+      "picture": "https://i.guim.co.uk/img/media/f1e0f389c933cd331eab1f4d9a95743d2ba36876/0_1_2000_1201/master/2000.jpg?width=465&quality=45&auto=format&fit=max&dpr=2&s=49534fe4c19fa050a93ebcdb4db0282b",
+      "type": "Apartment",
+      "id": 9
+    },
+    {
+      "name": "Apartment",
+      "description": "Кок-Жар дом 65 0507342113",
+      "price": "56 000$",
+      "picture": "https://image1.apartmentfinder.com/i2/4zw09NZYbDuBHLizmJwIsH6kVFRrMYe_3M3s05z-1YU/110/image.jpg",
+      "type": "Apartment",
+      "id": 10
+    },
+    {
+      "name": "Rent",
+      "description": "6-мкрн дом 54 990456372",
+      "price": "320$",
+      "picture": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/267262611.jpg?k=c5202738fb9f021dcd0d0daa060d88d39eb60e27afd35f20b5d6b117d2849d88&o=&hp=1",
+      "type": "Rent",
+      "id": 11
+    },
+    {
+      "name": "Rent",
+      "description": "Район джал-29 дом 8.1 0705345627",
+      "price": null,
+      "picture": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/2e/25/da/old-town-by-welcome-apartment.jpg?w=900&h=-1&s=1",
+      "type": "Rent",
+      "id": 12
     }
   ]
 }

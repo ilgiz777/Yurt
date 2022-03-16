@@ -29,24 +29,24 @@ const ProductCard = ({ item }) => {
   return (
     <>
       <Card className="div_cart" sx={{ borderRadius: 3 }}>
-        <div className="cardProduct">
-          <CardMedia
-            className="cart_img"
-            sx={{ borderRadius: 2 }}
-            component="img"
-            height="300"
-            image={item.picture}
-            alt="green"
-          />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-              {item.name}
-            </Typography>
-            <Typography variant="body2" color="text.primary">
-              {item.description}
-            </Typography>
-          </CardContent>
-        </div>
+        {/* <div className="cardProduct"> */}
+        <CardMedia
+          className="cart_img"
+          sx={{ borderRadius: 2 }}
+          component="img"
+          height="300"
+          image={item.picture}
+          alt="green"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="div">
+            {item.name}
+          </Typography>
+          <Typography variant="body2" color="text.primary">
+            {item.description}
+          </Typography>
+        </CardContent>
+        {/* </div> */}
 
         <CardActions>
           {email === ADMIN ? (
@@ -70,15 +70,15 @@ const ProductCard = ({ item }) => {
 
           <span onClick={() => navigate(`/products/${item.id}`)}>more...</span>
           <button className="dislikes">
+            <ThumbDownAltIcon />
+          </button>
+          <button className="likes">
             <Badge
               badgeContent={cart?.products ? cart.products.length : 0}
               // color="secondary"
             >
-              <ThumbDownAltIcon />
+              <ThumbUpIcon />
             </Badge>
-          </button>
-          <button className="likes">
-            <ThumbUpIcon />
           </button>
         </CardActions>
         <div className="comment__container">

@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Shizuru&display=swap");
 
-#navbar_color {
-  /* background-color: rgba(14, 82, 94, 0); */
-  /* background-image: url("https://avatanplus.com/files/resources/original/5a5e5a0240fe8161008f98da.jpg"); */
-}
+/* #navbar_color { */
+/* background-color: rgba(14, 82, 94, 0); */
+/* background-image: url("https://avatanplus.com/files/resources/original/5a5e5a0240fe8161008f98da.jpg"); */
+/* } */
 
 img {
   width: 5vw;
@@ -21,4 +21,8 @@ img {
 
 #button {
   color: white;
+}
+
+#navbar_color {
+  background-color: #36647f;
 }
