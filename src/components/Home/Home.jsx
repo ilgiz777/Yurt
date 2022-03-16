@@ -1,18 +1,22 @@
 import React from "react";
 
+import "./Home.css";
 const Home = () => {
   return (
-    <div>
-      {" "}
-      <div className="step">
-        <video autoPlay loop muted>
-          <source
-            src="https://fiverr-res.cloudinary.com/video/upload/t_fiverr_hd/sipfsby7laoh8pmhvzyq"
-            type="video/mp4"
-          />
-        </video>
-      </div>
-    </div>
+    <>
+      <header className="headers">
+        <navs>
+          <div className="row"></div>
+        </navs>
+        <div className="hero-text-box">
+          <h1>
+            Buying & Selling with Sophistication,
+            <br />
+            Elegance and Class
+          </h1>
+        </div>
+      </header>
+    </>
   );
 };
 

@@ -37,7 +37,7 @@ const EditProduct = () => {
 
   return (
     <div>
-      <Box sx={{ bgcolor: "#ffe0b2", height: "100vh", padding: "20vh auto" }}>
+      <Box sx={{ bgcolor: "#90caf9", height: "100vh", padding: "20vh auto" }}>
         <center variant="h6" gutterBottom>
           EDIT PRODUCT
         </center>
@@ -50,7 +50,7 @@ const EditProduct = () => {
             margin: "10vh auto",
             boxShadow: 3,
             borderRadius: 3,
-            bgcolor: "#ffcc80",
+            bgcolor: "#82b1ff",
           }}
         >
           <form>
@@ -97,15 +97,6 @@ const EditProduct = () => {
               label="TYPE"
               variant="outlined"
               name="type"
-              onChange={(e) => handleInput(e, product, setProduct)}
-            />
-            <TextField
-              value={product.genre}
-              fullWidth
-              id="outlined-basic"
-              label="GENRE"
-              variant="outlined"
-              name="genre"
               onChange={(e) => handleInput(e, product, setProduct)}
             />
             <Stack direction="row" spacing={2} sx={{ bgcolor: "#880e4f" }}>

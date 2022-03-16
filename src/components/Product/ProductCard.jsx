@@ -1,16 +1,30 @@
 import {
+  Badge,
   Button,
   Card,
+  CardActions,
   CardContent,
   CardMedia,
+  IconButton,
   Typography,
 } from "@mui/material";
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { useAuth } from "../../contexts/AuthContext";
+import FavoriteIcon from "@mui/icons-material/Favorite";
 import { useProducts } from "../../contexts/ProductContext";
+import { ADMIN } from "../../helpers/consts";
+import ThumbUpIcon from "@mui/icons-material/ThumbUp";
+import ThumbDownAltIcon from "@mui/icons-material/ThumbDownAlt";
+import "./ProductCard.css";
 
 const ProductCard = ({ item }) => {
-  const { deleteProduct } = useProducts();
+  const { deleteProduct, addProductToCart, checkProductInCart } = useProducts();
+  const { cart } = useProducts();
+
+  const {
+    user: { email },
+  } = useAuth();
   const navigate = useNavigate();
   return (
     <>
@@ -22,7 +36,7 @@ const ProductCard = ({ item }) => {
             component="img"
             height="300"
             image={item.picture}
-            alt="green iguana"
+            alt="green"
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
@@ -34,12 +48,71 @@ const ProductCard = ({ item }) => {
           </CardContent>
         </div>
 
-        <Button size="small" onClick={() => deleteProduct(item.id)}>
-          Delete
-        </Button>
-        <Button size="small" onClick={() => navigate(`/edit/${item.id}`)}>
-          Edit
-        </Button>
+        <CardActions>
+          {email === ADMIN ? (
+            <>
+              <Button size="small" onClick={() => deleteProduct(item.id)}>
+                DELETE
+              </Button>
+              <Button size="small" onClick={() => navigate(`/edit/${item.id}`)}>
+                EDIT
+              </Button>
+            </>
+          ) : (
+            <>
+              <IconButton onClick={() => addProductToCart(item)}>
+                <FavoriteIcon
+                  color={checkProductInCart(item.id) ? "seccondary" : ""}
+                />
+              </IconButton>
+            </>
+          )}
+
+          <span onClick={() => navigate(`/products/${item.id}`)}>more...</span>
+          <button className="dislikes">
+            <Badge
+              badgeContent={cart?.products ? cart.products.length : 0}
+              // color="secondary"
+            >
+              <ThumbDownAltIcon />
+            </Badge>
+          </button>
+          <button className="likes">
+            <ThumbUpIcon />
+          </button>
+        </CardActions>
+        <div className="comment__container">
+          {/* <h1 className="comment__title">Add a new comment</h1> */}
+          <div className="comment__body">
+            {/* <img
+            src="https://api.adorable.io/avatars/50/arefn@codepen"
+            className="comment__avatar"
+            alt="avatar"
+          /> */}
+            <div>
+              <textarea
+                className="comment__textarea"
+                placeholder="Type your message ..."
+                rows="4"
+              ></textarea>
+              <div className="comment__post">
+                <div>
+                  <button
+                    className="comment__send"
+                    onClick={() => navigate("/products")}
+                    // onClick={() => {
+                    //   addProduct(product);
+
+                    //   navigate("/products");
+                    // }
+                  >
+                    Post Comment
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </Card>
     </>
   );

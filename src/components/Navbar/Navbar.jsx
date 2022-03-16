@@ -16,8 +16,7 @@ import { Link } from "react-router-dom";
 import { useAuth } from "../../contexts/AuthContext";
 import { ADMIN } from "../../helpers/consts";
 import "./Navbar.css";
-
-import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import FavoriteIcon from "@mui/icons-material/Favorite";
 import { Badge } from "@mui/material";
 import { useProducts } from "../../contexts/ProductContext";
 
@@ -37,7 +36,7 @@ const Navbar = () => {
     user: { email },
   } = useAuth();
 
-  //   const { cart } = useProducts();
+  const { cart } = useProducts();
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -148,11 +147,11 @@ const Navbar = () => {
                   key={page.id}
                   onClick={handleCloseNavMenu}
                   sx={{
-                    my: 2,
-                    color: "#ff9100",
+                    my: 3,
+                    color: "#fafafa",
                     display: "block",
-                    fontSize: 12,
-                    fontFamily: "Monospace",
+                    fontSize: 16,
+                    fontFamily: "sans-serif",
                   }}
                 >
                   {page.name}
@@ -165,11 +164,11 @@ const Navbar = () => {
               <Link to="/admin">
                 <Button
                   sx={{
-                    my: 2,
-                    color: "#ff9100",
+                    my: 3,
+                    color: "#fafafa",
                     display: "block",
-                    fontSize: 12,
-                    fontFamily: "Monospace",
+                    fontSize: 16,
+                    fontFamily: "sans-serif",
                   }}
                 >
                   ADMIN PANEL
@@ -177,12 +176,12 @@ const Navbar = () => {
               </Link>
             ) : (
               <Link to="/cart">
-                <Button sx={{ my: 2, color: "white" }}>
+                <Button sx={{ my: 2, color: "#e53935" }}>
                   <Badge
-                    // badgeContent={cart?.products ? cart.products.length : 0}
+                    badgeContent={cart?.products ? cart.products.length : 0}
                     color="secondary"
                   >
-                    <ShoppingCartIcon />
+                    <FavoriteIcon />
                   </Badge>
                 </Button>
               </Link>

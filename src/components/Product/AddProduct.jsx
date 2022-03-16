@@ -37,10 +37,9 @@ const AddProduct = () => {
   };
 
   return (
-    <Box sx={{ bgcolor: "#ffe0b2", height: "100vh", padding: "20vh auto" }}>
+    <Box sx={{ bgcolor: "#90caf9", height: "100vh", padding: "20vh auto" }}>
       <center variant="h6" gutterBottom>
-        <h2 sx={{ fontFamily: "Monospace" }}>WELCOME, ADMIN!</h2>
-      
+        <h2 sx={{ fontFamily: "Monospace" }}>Willkommen, Admin!</h2>
       </center>
 
       <Grid
@@ -51,7 +50,7 @@ const AddProduct = () => {
           margin: "10vh auto",
           boxShadow: 3,
           borderRadius: 3,
-          bgcolor: "#ffcc80",
+          bgcolor: "#82b1ff",
         }}
       >
         <form>
@@ -95,16 +94,16 @@ const AddProduct = () => {
             name="type"
             onChange={handleInp}
           />
-          <Stack direction="row" spacing={2} sx={{ bgcolor: "#880e4f" }}>
+          <Stack direction="row" spacing={2} sx={{ bgcolor: "#9575cd" }}>
             <Button
               id="button"
               sx={{
-                bgcolor: "#263238",
-                borderColor: "error.main",
+                bgcolor: "#7c4dff",
+                borderColor: "warning.main",
                 fontFamily: "Monospace",
               }}
               variant="outlined"
-              color="error"
+              color="primary"
               size="large"
               fullWidth
               onClick={() => {

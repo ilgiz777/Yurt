@@ -1,0 +1,144 @@
+.details-wrap {
+  display: flex;
+  padding: 20px 0 20px 0;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #041c32;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#details-img {
+  width: 40vw;
+  height: 60vh;
+  border-radius: 2%;
+  animation-name: img;
+  animation-duration: 2s;
+}
+.details-list {
+  /* background-color: rgba(0, 0, 0, 0.4); */
+  min-width: 40vw;
+  min-height: 60vh;
+  border-radius: 2%;
+  margin-left: 10vh;
+  color: rgb(255, 238, 0);
+  animation-name: list;
+  animation-duration: 2s;
+  font-size: 20px;
+}
+h2 {
+  margin-bottom: 15px;
+}
+
+.details-list_price_name h3 {
+  margin-left: 40vh;
+}
+
+.type {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.details-list_price {
+  margin-top: 6vh;
+}
+
+.details-list_price h5,
+h3 {
+  margin-left: 10vh;
+}
+
+.details-list_price hr {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 5vh;
+  border-radius: none;
+  height: 3px;
+  background-color: rgb(255, 238, 0);
+}
+
+.descr {
+  margin-bottom: 4vh;
+}
+
+.title {
+  font-size: 3em;
+  color: white;
+}
+.price {
+  color: rgb(166, 180, 88);
+}
+
+#price_none {
+  text-decoration: line-through;
+  margin-bottom: 1vh;
+  color: #e9ecb6;
+}
+
+.type {
+  color: orange;
+}
+
+.descr {
+  color: rgb(204, 197, 197);
+}
+
+@keyframes img {
+  0% {
+    opacity: 30%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes list {
+  0% {
+    opacity: 30%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@media screen and (max-width: 546px) {
+  .details-list {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 456px) {
+  .details-list {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .details-list {
+    font-size: 17px;
+  }
+
+  .type {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .details-list {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 714px) {
+  #details-img,
+  h3 {
+    width: 65%;
+    margin-left: 20%;
+    margin-bottom: 3vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .details-list {
+    margin-right: 13%;
+  }
+}

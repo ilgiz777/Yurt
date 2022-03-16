@@ -1,20 +1,44 @@
 {
   "products": [
     {
-      "name": "vsdv",
-      "description": "sdvsd",
+      "name": "Apartment",
+      "description": "Djal -29 8/1",
       "price": null,
-      "picture": "sdvsd",
-      "type": "sdvsv",
+      "picture": "https://images.ctfassets.net/pg6xj64qk0kh/2r4QaBLvhQFH1mPGljSdR9/39b737d93854060282f6b4a9b9893202/camden-paces-apartments-buckhead-ga-terraces-living-room-with-den_1.jpg",
+      "type": "Flat",
       "id": 1
     },
     {
-      "name": "xzx12",
-      "description": "zz12",
-      "price": "012",
-      "picture": "xz",
-      "type": "zx",
+      "name": "Flat",
+      "description": "Nice",
+      "price": null,
+      "picture": "https://images.ctfassets.net/pg6xj64qk0kh/2r4QaBLvhQFH1mPGljSdR9/39b737d93854060282f6b4a9b9893202/camden-paces-apartments-buckhead-ga-terraces-living-room-with-den_1.jpg",
+      "type": "Rent",
       "id": 2
+    },
+    {
+      "name": "Apartment",
+      "description": "Mannheim",
+      "price": null,
+      "picture": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/267262611.jpg?k=c5202738fb9f021dcd0d0daa060d88d39eb60e27afd35f20b5d6b117d2849d88&o=&hp=1",
+      "type": "Sell",
+      "id": 4
+    },
+    {
+      "name": "Flat",
+      "description": "Lubeck",
+      "price": null,
+      "picture": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/267262611.jpg?k=c5202738fb9f021dcd0d0daa060d88d39eb60e27afd35f20b5d6b117d2849d88&o=&hp=1",
+      "type": "Rent",
+      "id": 5
+    },
+    {
+      "name": "Apartment",
+      "description": "Beauty plast",
+      "price": 12,
+      "picture": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/267262611.jpg?k=c5202738fb9f021dcd0d0daa060d88d39eb60e27afd35f20b5d6b117d2849d88&o=&hp=1",
+      "type": "Sell",
+      "id": 6
     }
   ]
 }
